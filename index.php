@@ -25,21 +25,21 @@
     <div class="container" id="tamanhoContainer">
 
         <h4>Formulario de cadastro</h4>
-        <form action="" style="margin-top:20px;">
+        <form action="_inserir_produto.php" style="margin-top:20px;" method="post">
             <!-- numero do produto -->
             <div class="form-group">
                 <label for="exampleInputEmail1">Nro do Produto</label>
-                <input type="number" class="form-control" placeholder="Insira o Numero Do Produto">
+                <input type="number" class="form-control" placeholder="Insira o Numero Do Produto" name="nroproduto" required autocomplete="off">
             </div>
             <!-- Nome do Produto -->
             <div class="form-group">
                 <label for="exampleInputEmail1">Nome do Produto</label>
-                <input type="text" class="form-control" placeholder="Insira o Nome Do Produto">
+                <input type="text" class="form-control" placeholder="Insira o Nome Do Produto " name="nomeproduto" required >
             </div>
             <!-- Categoria -->
             <div class="form-group">
                 <label>Categoria</label>
-                <select class="form-control">
+                <select class="form-control" name="categorias">
                     <option>Perifericos</option>
                     <option>Hardware</option>
                     <option>Software</option>
@@ -50,13 +50,13 @@
             <!-- Quantidade -->
             <div class="form-group">
                 <label for="exampleInputEmail1">Quantidade</label>
-                <input type="number" class="form-control" placeholder="Insira a quantidade">
+                <input type="number" class="form-control" placeholder="Insira a quantidade" name="quantidade" required> 
             </div>
 
             <!-- Lista Fornecedor -->
             <div class="form-group">
                 <label>Lista de Fornecedores</label>
-                <select class="form-control">
+                <select class="form-control" name="fornecedor">
                     <option>Fornecedor A</option>
                     <option>Fornecedor B</option>
                     <option>Fornecedor c</option>
@@ -76,7 +76,8 @@
 
 
 
-    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.js"></script>
+
 </body>
 
 
