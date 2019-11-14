@@ -39,7 +39,7 @@
             <!-- Categoria -->
             <div class="form-group">
                 <label>Categoria</label>
-                <select class="form-control" name="categorias">
+                <select class="form-control" name="categoria">
                     <option>Perifericos</option>
                     <option>Hardware</option>
                     <option>Software</option>
